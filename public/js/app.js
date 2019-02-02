@@ -16494,7 +16494,12 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a(_objectSpread({
 }, _App_vue__WEBPACK_IMPORTED_MODULE_4__["default"])); // prime the store with server-initialized state.
 // the state is determined during SSR and inlined in the page markup.
 
-_store__WEBPACK_IMPORTED_MODULE_1__["default"].replaceState(window.__INITIAL_STATE__); // actually mount to DOM
+_store__WEBPACK_IMPORTED_MODULE_1__["default"].replaceState(window.__INITIAL_STATE__); // Change Document Title
+
+_router__WEBPACK_IMPORTED_MODULE_2__["default"].beforeEach(function (to, from, next) {
+  document.title = to.meta.title;
+  next();
+}); // actually mount to DOM
 
 app.$mount('#app');
 
@@ -16594,11 +16599,17 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
   routes: [{
     path: '/',
     name: 'Home',
-    component: _views_Home__WEBPACK_IMPORTED_MODULE_2__["default"]
+    component: _views_Home__WEBPACK_IMPORTED_MODULE_2__["default"],
+    meta: {
+      title: 'Vuedonara Mix'
+    }
   }, {
     path: '/about',
     name: 'About',
-    component: _views_About__WEBPACK_IMPORTED_MODULE_3__["default"]
+    component: _views_About__WEBPACK_IMPORTED_MODULE_3__["default"],
+    meta: {
+      title: 'Hello world! - Vuedonara Mix'
+    }
   }]
 }));
 

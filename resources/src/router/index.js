@@ -12,12 +12,14 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      meta: {title: 'Vuedonara Mix'}
     },
     {
       path: '/about',
       name: 'About',
-      component: About
+      component: About,
+      meta: {title: 'Hello world! - Vuedonara Mix'}
     }
   ]
 })
