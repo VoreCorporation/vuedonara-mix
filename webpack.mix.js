@@ -14,6 +14,10 @@ mix.webpackConfig({
         __dirname,
         "resources/src/components"
       ),
+      "@store": path.resolve(
+        __dirname,
+        "resources/src/store"
+      ),
       "@views": path.resolve(
         __dirname,
         "resources/src/views"
@@ -26,6 +30,10 @@ mix.webpackConfig({
         __dirname,
         "resources/src/assets/sass"
       ),
+      "@app-registry": path.resolve(
+        __dirname,
+        "resources/src/app"
+      )
     }
   }
 });

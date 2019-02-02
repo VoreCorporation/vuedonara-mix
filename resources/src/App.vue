@@ -7,8 +7,8 @@
             </div>
 
             <div class="links" style="margin-bottom:55px;">
-                <a href="/">Home</a>
-                <a href="/about">About</a>
+                <router-link to="/">Home</router-link>
+                <router-link to="/about">About</router-link>
                 <a href="https://github.com/VoreCorporation/vuedonara-mix">GitHub</a>
             </div>
         
@@ -16,12 +16,6 @@
         </div>
     </div>
 </template>
-
-<script>
-export default {
-  
-}
-</script>
 
 <style>
     html, body {
@@ -62,7 +56,7 @@ export default {
         font-size: 60px;
     }
 
-    .links > a {
+    .links > a, .links > router-link {
         color: #636b6f;
         padding: 0 25px;
         font-size: 13px;

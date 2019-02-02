@@ -10,3 +10,7 @@ tmp
 
 # The development sqlite file
 database/development.sqlite
+
+# Webpack Build
+public/js
+public/mix-manifest.json
