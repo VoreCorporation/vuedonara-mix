@@ -16,4 +16,10 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+Route.get("ping", () => {
+  return { 
+    message: "pong" 
+  }
+})
+
+Route.any('*', ({ view }) => view.render('app'))
