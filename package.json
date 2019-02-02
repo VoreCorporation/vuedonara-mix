@@ -13,9 +13,9 @@
     "adonisjs",
     "adonis-app"
   ],
-  "author": "",
+  "author": "Vore Corporation",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@adonisjs/ace": "^5.0.8",
     "@adonisjs/auth": "^3.0.7",
@@ -32,7 +32,8 @@
   "devDependencies": {
     "vue": "^2.5.22",
     "vue-router": "^3.0.2",
-    "vue-template-compiler": "^2.5.22"
+    "vue-template-compiler": "^2.5.22",
+    "webpack": "^4.29.0"
   },
   "autoload": {
     "App": "./app"
