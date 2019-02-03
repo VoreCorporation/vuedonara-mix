@@ -17,6 +17,10 @@ This is the fullstack boilerplate for AdonisJs, it's already integrated with *Vu
 8. Migrations and seeds
 9. Vue (vuex and vue-router are installed and ready to use, synced with *vue-router-sync*)
 
+## Requirements
+- Node >= 8.*
+- Adonis-cli >=  4.1.*
+
 ## Install
 Create a new project with:
 
