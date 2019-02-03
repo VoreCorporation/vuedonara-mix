@@ -6,7 +6,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "fwatch": "webpack --watch --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "fdev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "fwatch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "fhot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "fproduction": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "test": "node ace test"
   },
   "keywords": [
