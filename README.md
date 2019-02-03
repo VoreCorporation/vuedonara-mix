@@ -3,7 +3,7 @@
 [![AdonisJS][adonisjs]][adonisjs-url] [![Vue][vue]][vue-url] [![Laravel-Mix][laravel-mix]][laravel-mix-url]
 
 ## Adonis fullstack application
-<p align="center"><img width="390" src="https://raw.githubusercontent.com/VoreCorporation/vuedonara-mix/master/template/public/logo.png"></p>
+<p align="center"><img width="390" src="https://raw.githubusercontent.com/VoreCorporation/vuedonara-mix/master/public/logo.png"></p>
 
 This is the fullstack boilerplate for AdonisJs, it's already integrated with *Vue* and *Laravel-Mix*. You can use this as a start point for your Adonis + Laravel Mix projects.
 
