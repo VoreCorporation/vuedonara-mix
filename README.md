@@ -17,14 +17,14 @@ This is the fullstack boilerplate for AdonisJs, it's already integrated with *Vu
 8. Migrations and seeds
 9. Vue (vuex and vue-router are installed and ready to use, synced with *vue-router-sync*)
 
-### Setup
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
-```bash
-vue init VoreCorporation/vuedonara-mix <project-name>
-cd <project-name> # move to your project
-mv .env.example .env # Add environment variables for Adonis
-npm install # or yarn install
+### Install
+Create a new project with:
+
+```shell
+  adonis new <my-project> --blueprint VoreCorporation/vuedonara-mix
 ```
+
+> Change `<my-project>` to your project name.
 
 The Adonis `start` and `test` commands still there and the following commands are available to handle project assets:
 
