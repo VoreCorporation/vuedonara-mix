@@ -6,6 +6,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
+    "dev": "NODE_ENV=development nodemon server.js",
+    "prod": "NODE_ENV=production node server.js",
     "fdev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "fwatch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "fhot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -32,6 +34,7 @@
     "@adonisjs/shield": "^1.0.8",
     "ascii-art": "^1.5.0",
     "canvas": "^2.3.1",
+    "gradient-string": "^1.2.0",
     "laravel-mix": "^4.0.14",
     "vuex": "^3.1.0",
     "vuex-router-sync": "^5.0.0"
