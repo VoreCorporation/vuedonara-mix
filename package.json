@@ -27,6 +27,8 @@
     "@adonisjs/lucid": "^6.1.3",
     "@adonisjs/session": "^1.0.27",
     "@adonisjs/shield": "^1.0.8",
+    "ascii-art": "^1.5.0",
+    "canvas": "^2.3.1",
     "laravel-mix": "^4.0.14"
   },
   "devDependencies": {
