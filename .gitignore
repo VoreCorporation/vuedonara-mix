@@ -1,16 +1,16 @@
 # Node modules
 node_modules
-template/package-lock.json
+package-lock.json
 
 # Adonis directory for storing tmp files
 tmp
 
 # Environment variables, never commit this file
-template/.env
+.env
 
 # The development sqlite file
-template/database/development.sqlite
+database/development.sqlite
 
 # Webpack Build
-template/public/js
-template/public/mix-manifest.json
+public/js
+public/mix-manifest.json
