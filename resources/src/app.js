@@ -25,6 +25,13 @@ router.beforeEach((to, from, next) => {
   next()
 })
 
+// Disable Devtools on Production
+if (process.env.NODE_ENV == "production") {
+  Vue.config.devtools = false;
+  Vue.config.debug = false;
+  Vue.config.silent = true;
+}
+
 // actually mount to DOM
 app.$mount('#app')
 
